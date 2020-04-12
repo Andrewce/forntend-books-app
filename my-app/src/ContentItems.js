@@ -1,20 +1,23 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default class ContentItems extends React.Component {
     render() {
-        return <li className="App-item">
-            {this.props.eId}) {this.props.name}
-            <br/>Salary: ${this.props.salary} 
-            <br/>
-            <br/>
-            <img src="https://raw.githubusercontent.com/Andrewce/Pic/master/user.png" alt="-img..-" width="200" height="200"/>
-            <br/>
-
+        return <div className="container border">
+            <div className="">
+                {this.props.eId}) {this.props.name}
+                <br />Book author: ${this.props.bookTitle}
+                <br />
+                <br />
+                <img src="https://raw.githubusercontent.com/Andrewce/Pic/master/user.png" alt="-img..-" width="200" height="200" />
+                <br />
             age: {this.props.age}
-        </li>
-        
+            </div>
+            <input type="submit" onClick={this.props.onFormSubmit} />
+        </div>
+
     }
-} 
+}
 //change

@@ -1,14 +1,6 @@
 .App {
 background-color: blanchedalmond;
 }
-.App-header {
-  text-align: center;
-
-  padding-top: 30px;
-  background-color: #282c34;
-  color: white;
-  padding: 30px;
-}
 .App-body {
   padding-top: 30px;;
   height: 1500px;
@@ -33,9 +25,11 @@ background-color: blanchedalmond;
   border: 1px solid rgba(0, 0, 0, 0.8);
  }
 .App-input {
-  width: 100px;
+  width: 70px;
 }
 .App-Content {
+  padding-top: 100px;
+  align-items: center;
   display: grid;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
@@ -44,6 +38,7 @@ background-color: blanchedalmond;
   margin-right: 17%;
 margin-top: 10px;
 background-color: lightgreen;
+justify-content: space-evenly;
 
 
 }
