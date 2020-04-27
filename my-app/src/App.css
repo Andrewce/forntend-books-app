@@ -1,46 +1,27 @@
 .App {
 background-color: blanchedalmond;
 }
-.App-body {
-  padding-top: 30px;;
-  height: 1500px;
-  background-color: rgb(185, 150, 214);
-  margin-left: 15vw;
-  margin-right: 15vw;
-
-}
 .App-footer {
-  background-color: #282c34;
   color: white;
-  padding: 30px;
+  height: 15px;
+text-align: center;
+padding-bottom: 40px;
+padding-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 .App-item {
   background-color:lightgray;
   width: 350px;
   height: 350px;
   border: 1px solid rgba(0, 0, 0, 0.8);
  }
-.App-input {
-  width: 70px;
-}
-.App-Content {
-  padding-top: 100px;
-  align-items: center;
-  display: grid;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  grid-template-columns: auto auto auto;
+
+.AddItemsCss {
   margin-left: 17%;
   margin-right: 17%;
 margin-top: 10px;
-background-color: lightgreen;
-justify-content: space-evenly;
-
-
+padding-top: 20px;
+background-color: lightgrey;
 }
 .App-buton {
   width: 100px;

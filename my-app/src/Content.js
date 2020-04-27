@@ -10,17 +10,13 @@ export class Content extends React.Component {
             items: [],
         };
     }
-
     componentDidMount() {
         let url = 'http://localhost:3002/books'
-
-
         request({
             method: 'GET',
-            url: url,
-            body: newBook
+            url: url
         },
-            (err, res) => {
+            (err, res, body) => {
                 if (err) return console.error(err);
                 const info = JSON.parse(body);
                 let items = [];
@@ -28,25 +24,42 @@ export class Content extends React.Component {
                     items.push(i)
                 })
                 this.setState({ items: items });
-                console.log(items.filter(items => items.id <= 10))
+            });
+    }
+    componentDidUpdate() {
+        let url = 'http://localhost:3002/books'
+        request({
+            method: 'GET',
+            url: url
+        },
+            (err, res, body) => {
+                if (err) return console.error(err);
+                const info = JSON.parse(body);
+                let items = [];
+                info.forEach(function (i) {
+                    items.push(i)
+                })
+                this.setState({ items: items });
             });
     }
 
+
+
+
     render() {
         return (
-            < div>
-                <div className="App-Content">
+            < div className="container">
+                < div className="row">
                     {this.state.items
-                        //.filter(items.id => items.id<=10)
                         .map((item, i) => {
                             return <ContentItems
                                 name={item.author}
                                 key={i}
-                                eId={item.id}
+                                bookId={item.id}
                                 bookTitle={item.title}
                             />
                         })}
-                </div>
+                </div >
             </div >
 
         );

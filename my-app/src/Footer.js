@@ -2,10 +2,9 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className="footer main-footer footer-dark">
-            <div className="container">
-                Footer
-
+        <div id="wrap">
+            <div id="main" className="App-footer navbar-dark bg-dark possition-repative">
+                <footer>Your footer here</footer>
             </div>
         </div>
     )
