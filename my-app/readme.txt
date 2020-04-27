@@ -1,3 +1,7 @@
+git add .
+git commit -m "your message"
+git push 
+git remote add 
 
               constructor(props) {
     super(props)
