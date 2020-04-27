@@ -1,7 +1,8 @@
 git add .
 git commit -m "your message"
 git push 
-git remote add 
+git remote add https://github.com/Andrewce/forntend-books-app.git
+git push -u origin master
 
               constructor(props) {
     super(props)
